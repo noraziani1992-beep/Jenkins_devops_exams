@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('dockerformation123')  // Les credentials DockerHub
+        DOCKERHUB_CREDENTIALS = credentials('DOCKER_HUB_PASS')  // Les credentials DockerHub
         MOVIE_REPO = 'dockerformation123/movie-service'  // Repo pour movie
         CAST_REPO = 'dockerformation123/cast_service'   // Repo pour cast
         IMAGE_TAG = "${BUILD_NUMBER}"  // Tag dynamique avec numéro de build
